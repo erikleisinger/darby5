@@ -7,21 +7,28 @@
 /* MOTION: Smooth word transition for cycling headline */
 .cycling-word {
   display: inline-block;
-  animation: fadeWord 3000ms ease-in-out infinite;
+  animation: fadeWord  ease-in-out infinite;
+  opacity: 0;
 }
 
 @keyframes fadeWord {
   0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
     opacity: 0;
+    transform: translateX(0px);
+   
+  }
+  30% {
+    opacity: 1;
+       
+  }
+  50% {
+    opacity: 1;
+      transform: translateX(8px);
   }
   100% {
     opacity: 0;
+        transform: translateX(8px);
+
   }
 }
 

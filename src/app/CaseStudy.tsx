@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import svgPaths from "../imports/svg-buwgyi628p";
 import { ExampleModal } from './components/ExampleModal';
-
+import useScrollTop from './hooks/useScrollTop';
 // IMAGES UPDATED: The Cost of Competing With Yourself
 
 export default function CaseStudy() {
+  useScrollTop();
   const [isMenuSticky, setIsMenuSticky] = useState(false);
   // POPUP: Track which example is open
   const [openExample, setOpenExample] = useState<number | null>(null);
@@ -27,7 +28,7 @@ export default function CaseStudy() {
   useEffect(() => {
     const handleScroll = () => {
       // Sticky menu activates when scrolling past the hero section (approximately 645px from Figma)
-      const heroHeight = 645;
+      const heroHeight = 850;
       setIsMenuSticky(window.scrollY >= heroHeight);
     };
 
@@ -140,7 +141,10 @@ export default function CaseStudy() {
           isMenuSticky 
             ? 'fixed top-[40px] left-[40px] lg:left-[calc(25vw-243px-40px)] z-40' 
             : 'absolute top-[933px] left-[40px] lg:left-0'
-        } transition-all duration-300 bg-[#f1eee7] p-[24px] flex flex-col gap-[24px] w-[243px] hidden lg:flex`}
+        }  duration-300 bg-[#f1eee7] p-[24px] flex flex-col gap-[24px] w-[243px] hidden lg:flex `}
+        style={{
+          transition: 'left 0.3s'
+        }}
       >
         <button 
           onClick={() => scrollToSection('outcome')}

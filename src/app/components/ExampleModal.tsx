@@ -125,7 +125,7 @@ export function ExampleModal({ isOpen, onClose, onPrevious, onNext, children }: 
       {/* Modal Content */}
       <div
         id="example-modal"
-        className="relative max-w-[95vw] max-h-[95vh] overflow-auto bg-[#f1eee7] rounded-[10px] shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+        className="relative max-w-[95vw] max-h-[95vh] h-[95dvh] w-[95dvw] overflow-auto bg-[#f1eee7] rounded-[10px] shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -141,7 +141,7 @@ export function ExampleModal({ isOpen, onClose, onPrevious, onNext, children }: 
         </button>
 
         {/* Content */}
-        <div className="p-[24px] md:p-[40px]">
+        <div className="p-[24px] md:p-[40px] lg:p-[80px] h-full w-full">
           {children}
         </div>
       </div>

@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react';
 import svgPaths from "../imports/svg-buwgyi628p";
 import { ExampleModal } from './components/ExampleModal';
 import WritingExample from '../imports/WritingExample-26-2001';
-
+import useScrollTop from './hooks/useScrollTop';
 export default function CaseStudy2() {
+  useScrollTop();
   const [isMenuSticky, setIsMenuSticky] = useState(false);
   // POPUP: Track which example is open
   const [openExample, setOpenExample] = useState<number | null>(null);
@@ -29,7 +30,7 @@ export default function CaseStudy2() {
   useEffect(() => {
     const handleScroll = () => {
       // Sticky menu activates when scrolling past the hero section (approximately 645px from Figma)
-      const heroHeight = 645;
+      const heroHeight = 850;
       setIsMenuSticky(window.scrollY >= heroHeight);
     };
 
@@ -76,7 +77,7 @@ export default function CaseStudy2() {
       </div>
 
       {/* CASE STUDY: Title Card */}
-      <div className="absolute left-0 top-[300px] md:top-[400px] lg:top-[645px] bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
+      <div className="absolute left-0 top-[400px] md:top-[400px] lg:top-[645px] bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
         <div className="flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px]">
           {/* CASE STUDY: Main Title */}
           <h1 className="font-['Neue_Haas_Grotesk_Display_Pro:95_Black',sans-serif] text-[#222021] text-[32px] md:text-[48px] lg:text-[64px] leading-[1.1] lg:leading-[55px] tracking-[-1.5px] lg:tracking-[-2.56px] uppercase">
@@ -117,7 +118,10 @@ export default function CaseStudy2() {
           isMenuSticky 
             ? 'fixed top-[40px] left-[40px] lg:left-[calc(25vw-243px-40px)] z-40' 
             : 'absolute top-[933px] left-[40px] lg:left-0'
-        } transition-all duration-300 bg-[#f1eee7] p-[24px] flex flex-col gap-[24px] w-[243px] hidden lg:flex`}
+        } duration-300 bg-[#f1eee7] p-[24px] flex flex-col gap-[24px] w-[243px] hidden lg:flex`}
+           style={{
+          transition: 'left 0.3s'
+        }}
       >
         <button 
           onClick={() => scrollToSection('outcome')}
@@ -459,17 +463,22 @@ export default function CaseStudy2() {
         )}
         {/* FIX: Example 3 Vimeo popup reliability */}
         {openExample === 3 && (
-          <div className="w-full max-w-[900px] mx-auto">
-            <div style={{ padding: '48.87% 0 0 0', position: 'relative' }}>
+          <div className="flex items-center h-full w-full">
+          <div className="m-auto h-full w-full relative">
+            <div className="absolute inset-0 top-0 bottom-0 h-full m-auto w-full">
               <iframe 
                 src="https://player.vimeo.com/video/1148195919?badge=0&autopause=0&player_id=0&app_id=58479"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                style={{
+                  height: '100%',
+                  width: '100%'
+                }}
                 title="The Amazing Thing You Can't Explain Video Example"
               />
             </div>
+          </div>
           </div>
         )}
         {/* UPDATE: Example 4 popup content uses provided hero + example images */}

@@ -35,16 +35,22 @@ import CaseStudy3 from './CaseStudy3';
 function LandingPage() {
   // CHANGE 3: Mobile hamburger menu state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+  const [showWord, setShowWord] = useState(true);
   // MOTION: Cycling headline words
   const [headlineWordIndex, setHeadlineWordIndex] = useState(0);
   const headlineWords = ['Intention.', 'Empathy.', 'Story.', 'Curiosity.'];
 
+  const WORD_ANIIMATION_DURATION =  3000
   // MOTION: Cycle through headline words
   useEffect(() => {
     const interval = setInterval(() => {
+      setShowWord(false)
+      setTimeout(() => {
+        setShowWord(true)
       setHeadlineWordIndex((prev) => (prev + 1) % headlineWords.length);
-    }, 3000); // Change word every 3 seconds
+      },0)
+
+    }, WORD_ANIIMATION_DURATION - 1); // Change word every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -100,6 +106,7 @@ function LandingPage() {
     // CHANGE 3: Close mobile menu on navigation
     setMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -175,7 +182,12 @@ function LandingPage() {
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:95_Black',sans-serif] leading-[1.1] lg:leading-[55px] text-[#333] text-[36px] sm:text-[48px] lg:text-[64px] tracking-[-1.5px] lg:tracking-[-2.56px] uppercase">
                 <span className="inline lg:inline">Great Design Begins with</span>
                 <br className="block lg:hidden" />
-                <span className="text-[#8b9544] cycling-word inline lg:inline"> {headlineWords[headlineWordIndex]}</span>
+                {
+                  showWord &&                 <span className="text-[#8b9544] cycling-word inline lg:inline" style={{
+                    animationDuration: `${WORD_ANIIMATION_DURATION}ms`,
+                  }}> {headlineWords[headlineWordIndex]}</span>
+                }
+
               </p>
             </div>
             <div className="w-full">
