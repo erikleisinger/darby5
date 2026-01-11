@@ -31,6 +31,7 @@ import { imgGroup, imgGroup1, imgGroup2 } from "../imports/svg-7eaib";
 import CaseStudy from './CaseStudy';
 import CaseStudy2 from './CaseStudy2';
 import CaseStudy3 from './CaseStudy3';
+import ContactForm from './ContactForm';
 
 function LandingPage() {
   // CHANGE 3: Mobile hamburger menu state
@@ -65,7 +66,7 @@ function LandingPage() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          console.log('Adding animate-in to:', entry.target);
+     
           entry.target.classList.add('animate-in');
         }
       });
@@ -73,9 +74,9 @@ function LandingPage() {
 
     // Observe all elements with data-animate attribute
     const animatedElements = document.querySelectorAll('[data-animate]');
-    console.log('Found animated elements:', animatedElements.length);
+
     animatedElements.forEach(el => {
-      console.log('Observing element:', el);
+
       observer.observe(el);
       // Only immediately add animate-in class for hero section elements
       const isHeroElement = el.closest('.hero-section');
@@ -629,17 +630,15 @@ function LandingPage() {
                 <div className="flex flex-col gap-4 md:gap-6">
                   {/* CHANGE 4: Updated About text as specified */}
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                    For as long as I can remember, I have been making things: designing digital experiences, crafting compelling stories, and making art. I'm a Creative Director, UX and Content Designer who helps agencies, marketers, and brands build trust fast and punch well above their weight.
+                   Darby Yule Creative Studios designs work that reduces friction, earns trust, and meets people where they are. The studio operates across digital systems and storytelling, shaping work with care. We partner with agencies and brands that need to move decisively and hit well above their weight.
                   </p>
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                    All DYCS designs are rooted in deep understanding of users. Starting every project with research, followed by focused ideation, allows purposefulness and depth in every design I create. Whether creating interfaces, editing video, or writing content, life begins with intention at Darby Yule Creative Studios.
+                   Work at Darby Yule Creative Studios begins with people. Each project starts with in-depth research, then moves through deliberate shaping into disciplined execution. Process matters because it produces work with coherence and durability. Every output is treated as part of a larger system, designed to function together and finished with precision.
                   </p>
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                    My mission is to create world-class design experiences for passionate organizations that want to deepen their connection with the people they serve. My favourite projects involve teams who care enough to go the extra mile and want to communicate with purpose. Success looks like a company fully in sync with its audience, and looking good while it happens.
+                    We partner with organizations that take how they show up seriously. Our strongest work requires well-informed, collaborative teams committed to a holistic and disciplined approach to design. Success looks like alignment between a company and its audience, supported by sound decisions and grounded craft.
                   </p>
-                  <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                    Send me a note and tell me what I can do to help!
-                  </p>
+                
                 </div>
               </div>
             </div>
@@ -699,67 +698,7 @@ function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#f1eee7] relative w-full py-8 md:py-12 lg:py-16 px-4 sm:px-8 md:px-12 lg:px-[80px]" data-animate>
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="flex flex-col gap-8 md:gap-10 lg:gap-[40px] items-center w-full">
-            {/* MOTION: Fade in section header */}
-            <div className="w-full" data-animate>
-              <p className="font-['Neue_Haas_Grotesk_Display_Pro:75_Bold',sans-serif] leading-tight md:leading-normal text-[#8b9544] text-[32px] md:text-[40px] lg:text-[48px] tracking-[1.2px] md:tracking-[1.92px] uppercase">Contact</p>
-            </div>
-            
-            {/* Contact Form */}
-            {/* MOTION: Fade in contact form */}
-            <div className="flex flex-col gap-4 md:gap-6 items-start p-4 md:p-6 relative rounded-[8px] w-full max-w-4xl border border-[#ccc]" data-animate>
-              {/* Name Field */}
-              <div className="flex flex-col gap-2 items-start w-full">
-                <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#333] text-[14px] md:text-[16px] tracking-[0.64px]">Name</p>
-                <div className="bg-[#fefefe] relative rounded-[8px] w-full border border-[#ccc]">
-                  <div className="flex items-center px-3 md:px-[16px] py-2 md:py-[12px]">
-                    <input 
-                      type="text" 
-                      placeholder="Jon Doe"
-                      className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#818380] text-[14px] md:text-[16px] tracking-[0.64px] bg-transparent border-none outline-none w-full placeholder:text-[#818380]"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Email Field */}
-              <div className="flex flex-col gap-2 items-start w-full">
-                <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#333] text-[14px] md:text-[16px] tracking-[0.64px]">Email</p>
-                <div className="bg-[#fefefe] relative rounded-[8px] w-full border border-[#ccc]">
-                  <div className="flex items-center px-3 md:px-[16px] py-2 md:py-[12px]">
-                    <input 
-                      type="email" 
-                      placeholder="example@email.com"
-                      className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#818380] text-[14px] md:text-[16px] tracking-[0.64px] bg-transparent border-none outline-none w-full placeholder:text-[#818380]"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Message Field */}
-              <div className="flex flex-col gap-2 items-start w-full">
-                <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#333] text-[14px] md:text-[16px] tracking-[0.64px]">Message</p>
-                <div className="bg-[#fefefe] relative rounded-[8px] w-full border border-[#ccc]">
-                  <div className="flex items-start px-3 md:px-[16px] py-2 md:py-[12px]">
-                    <textarea 
-                      placeholder="Your message here..."
-                      rows={6}
-                      className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#818380] text-[14px] md:text-[16px] tracking-[0.64px] bg-transparent border-none outline-none w-full resize-none placeholder:text-[#818380]"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Submit Button */}
-              <button className="bg-[#8b9544] hover:bg-[#7a8239] transition-colors px-6 md:px-8 py-3 md:py-4 rounded-[8px] self-start">
-                <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] tracking-[0.64px]">Send Message</p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+     <ContactForm/>
 
       {/* CHANGE 2: Replaced footer with Figma frame */}
       <footer className="bg-gradient-to-r from-[#e1c78f] to-[#7b6d4e] relative w-full">
@@ -783,7 +722,7 @@ function LandingPage() {
           {/* Social Icons */}
           <div className="flex gap-6 md:gap-[40px] items-center">
             {/* LinkedIn */}
-            <div className="relative w-8 h-8 md:w-[32.094px] md:h-[32.094px] hover:opacity-80 transition-opacity cursor-pointer">
+            <a className="relative w-8 h-8 md:w-[32.094px] md:h-[32.094px] hover:opacity-80 transition-opacity cursor-pointer" href="https://www.linkedin.com/in/darbyyule/" target="_blank">
               <svg className="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32.0941 32.0941">
                 <g clipPath="url(#clip0_footer_1)">
                   <path d={svgPathsFooter.p1ee81980} fill="#F1EEE7" />
@@ -794,10 +733,10 @@ function LandingPage() {
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </a>
 
             {/* Instagram */}
-            <div className="relative w-8 h-8 md:w-[32.094px] md:h-[32.094px] hover:opacity-80 transition-opacity cursor-pointer">
+            <a className="relative w-8 h-8 md:w-[32.094px] md:h-[32.094px] hover:opacity-80 transition-opacity cursor-pointer" href="https://www.instagram.com/darbyyule.png/" target="_blank">
               <svg className="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32.0941 32.0941">
                 <g clipPath="url(#clip0_footer_2)">
                   <path d={svgPathsFooter.p3439d780} fill="#F1EEE7" />
@@ -810,16 +749,16 @@ function LandingPage() {
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </a>
 
             {/* Email */}
-            <div className="relative rounded-[7.294px] w-8 h-8 md:w-[32.094px] md:h-[32.094px] border-2 border-[#f1eee7] hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
+            <a href="mailto:info@darbyyulecreative.studio"  className="relative rounded-[7.294px] w-8 h-8 md:w-[32.094px] md:h-[32.094px] border-2 border-[#f1eee7] hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
               <svg className="block w-6 h-6 md:w-[24px] md:h-[24px]" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
                 <g>
                   <path d={svgPathsFooter.p26ba6c80} fill="#F1EEE7" />
                 </g>
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </footer>
