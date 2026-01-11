@@ -47,13 +47,14 @@ const submission = {
   })
 
     .then(() => {
-        console.log('message sent')
+  
       setSuccess(true)
       reset()
       window.alert('Message sent!')
     })
     .catch(e => {
-      console.log('error: ', e)
+    window.alert('There was an error. Please ensure all fields are filled out and valid, then try again.')
+    
     })
     .finally(() => {
       setLoading(false)

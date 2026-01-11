@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import svgPaths from "../imports/svg-h2m55t9jbc";
 import svgPathsFooter from "../imports/svg-ro01cix2zi";
+import { INIT_ANALYTICS } from './analytics';
 // ASSET REPLACED: Hero images
 const imgHero31 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Hero3-v2.webp";
 const imgHeroV21 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Hero-v2.webp";
@@ -34,6 +35,7 @@ import CaseStudy3 from './CaseStudy3';
 import ContactForm from './ContactForm';
 
 function LandingPage() {
+  INIT_ANALYTICS();
   // CHANGE 3: Mobile hamburger menu state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showWord, setShowWord] = useState(true);
