@@ -4,30 +4,30 @@ import svgPaths from "../imports/svg-h2m55t9jbc";
 import svgPathsFooter from "../imports/svg-ro01cix2zi";
 import { INIT_ANALYTICS } from './analytics';
 // ASSET REPLACED: Hero images
-const imgHero31 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Hero3-v2.webp";
-const imgHeroV21 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Hero-v2.webp";
-const imgHero21 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Hero2.webp";
+const imgHero31 = "/wp-content/2025/12/Hero3-v2.webp";
+const imgHeroV21 = "/wp-content/2025/12/Hero-v2.webp";
+const imgHero21 = "/wp-content/2025/12/Hero2.webp";
 // ASSET REPLACED: Stories & Case Studies card images
-const imgFrame50 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Kinvest-Case-Study-Example-CARD.webp";
-const imgFrame49 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Pantegral-Case-Study-Example-Card.webp";
-const imgFrame47 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/c78d59df8eded3238410432d7c04b50cfa4ed464.png";
+const imgFrame50 = "/wp-content/2025/12/Kinvest-Case-Study-Example-CARD.webp";
+const imgFrame49 = "/wp-content/2025/12/Pantegral-Case-Study-Example-Card.webp";
+const imgFrame47 = "/wp-content/2025/12/c78d59df8eded3238410432d7c04b50cfa4ed464.png";
 // ASSET REPLACED: About section image
-const imgDarbyBio21 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Darby-Bio2-Multiply.webp";
+const imgDarbyBio21 = "/wp-content/2025/12/Darby-Bio2-Multiply.webp";
 // ASSET REPLACED: Collaborators logos
-const imgLogo13 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo3.webp";
-const imgLogo21 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo4.webp";
-const imgLogo31 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo1.webp";
-const imgLogo41 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo2.webp";
-const imgLogo51 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo5.webp";
-const imgLogo71 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo7.webp";
-const imgLogo61 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo6.webp";
-const imgLogo81 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo8.webp";
-const imgLogo91 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo9.webp";
-const imgLogo101 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo10.webp";
-const imgLogo111 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo11.webp";
-const imgLogo121 = "https://darbyyulecreative.studio/wp-content/uploads/2025/11/Logo12.webp";
+const imgLogo13 = "/wp-content/2025/11/Logo3.webp";
+const imgLogo21 = "/wp-content/2025/11/Logo4.webp";
+const imgLogo31 = "/wp-content/2025/11/Logo1.webp";
+const imgLogo41 = "/wp-content/2025/11/Logo2.webp";
+const imgLogo51 = "/wp-content/2025/11/Logo5.webp";
+const imgLogo71 = "/wp-content/2025/11/Logo7.webp";
+const imgLogo61 = "/wp-content/2025/11/Logo6.webp";
+const imgLogo81 = "/wp-content/2025/11/Logo8.webp";
+const imgLogo91 = "/wp-content/2025/11/Logo9.webp";
+const imgLogo101 = "/wp-content/2025/11/Logo10.webp";
+const imgLogo111 = "/wp-content/2025/11/Logo11.webp";
+const imgLogo121 = "/wp-content/2025/11/Logo12.webp";
 // ASSET REPLACED: Footer logo
-const imgLogoAlt1 = "https://darbyyulecreative.studio/wp-content/uploads/2025/12/Logo-Alt.png";
+const imgLogoAlt1 = "/wp-content/2025/12/Logo-Alt.png";
 import { imgGroup, imgGroup1, imgGroup2 } from "../imports/svg-7eaib";
 import CaseStudy from './CaseStudy';
 import CaseStudy2 from './CaseStudy2';
@@ -220,7 +220,7 @@ function LandingPage() {
             {/* ASSET REPLACED: Heartbeat Section image */}
             {/* MOTION: Fade in logo on scroll */}
             <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] lg:w-[111px] lg:h-[111px] relative flex items-center justify-center" data-animate>
-              <img src="https://darbyyulecreative.studio/wp-content/uploads/2025/10/cropped-frame-13.png" alt="" className="w-full h-full object-contain" />
+              <img src="/wp-content/2025/10/cropped-frame-13.png" alt="" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

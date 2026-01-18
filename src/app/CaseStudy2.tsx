@@ -72,7 +72,7 @@ export default function CaseStudy2() {
         <img 
           alt="" 
           className="w-full h-full object-cover object-center" 
-          src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Pantegral-Case-Study-HERO.webp" 
+          src="/wp-content/2025/12/Pantegral-Case-Study-HERO.webp" 
         />
       </div>
 
@@ -332,7 +332,7 @@ export default function CaseStudy2() {
                 <img 
                   alt="Services Cards" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Pantegral-Example1.webp" 
+                  src="/wp-content/2025/12/Case-Study-Pantegral-Example1.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -350,7 +350,7 @@ export default function CaseStudy2() {
                 <img 
                   alt="Process Graphic" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Pantegral-Example2.webp" 
+                  src="/wp-content/2025/12/Case-Study-Pantegral-Example2.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -368,7 +368,7 @@ export default function CaseStudy2() {
                 <img 
                   alt="Video: Dynamic Questions" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Pantegral-Example3.webp" 
+                  src="/wp-content/2025/12/Case-Study-Pantegral-Example3.webp" 
                 />
                 {/* Play icon overlay */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -394,7 +394,7 @@ export default function CaseStudy2() {
                 <img 
                   alt="Blog: A Billion Little Gardens" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Sparkjoy-ExampleWriting.webp" 
+                  src="/wp-content/2025/12/Case-Study-Sparkjoy-ExampleWriting.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -451,14 +451,14 @@ export default function CaseStudy2() {
           <img 
             alt="Services Cards" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Pantegral-Example1.webp" 
+            src="/wp-content/2025/12/Case-Study-Pantegral-Example1.webp" 
           />
         )}
         {openExample === 2 && (
           <img 
             alt="Process Graphic" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Pantegral-Example2.webp" 
+            src="/wp-content/2025/12/Case-Study-Pantegral-Example2.webp" 
           />
         )}
         {/* FIX: Example 3 Vimeo popup reliability */}

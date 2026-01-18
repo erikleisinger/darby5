@@ -71,7 +71,7 @@ export default function CaseStudy3() {
         <img 
           alt="" 
           className="w-full h-full object-cover object-center" 
-          src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Fenia-Case-Study-HERO.webp" 
+          src="/wp-content/2025/12/Fenia-Case-Study-HERO.webp" 
         />
       </div>
 
@@ -335,7 +335,7 @@ export default function CaseStudy3() {
                 <img 
                   alt="Home Page Anti-Marketing" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example3.webp" 
+                  src="/wp-content/2025/12/Case-Study-Fenia-Example3.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -353,7 +353,7 @@ export default function CaseStudy3() {
                 <img 
                   alt="Solution Driven Content" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example1.webp" 
+                  src="/wp-content/2025/12/Case-Study-Fenia-Example1.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -371,7 +371,7 @@ export default function CaseStudy3() {
                 <img 
                   alt="Results Page" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example2.webp" 
+                  src="/wp-content/2025/12/Case-Study-Fenia-Example2.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -389,7 +389,7 @@ export default function CaseStudy3() {
                 <img 
                   alt="Case Study Examples" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example4.webp" 
+                  src="/wp-content/2025/12/Case-Study-Fenia-Example4.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -446,28 +446,28 @@ export default function CaseStudy3() {
           <img 
             alt="Home Page Anti-Marketing" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example3.webp" 
+            src="/wp-content/2025/12/Case-Study-Fenia-Example3.webp" 
           />
         )}
         {openExample === 2 && (
           <img 
             alt="Solution Driven Content" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example1.webp" 
+            src="/wp-content/2025/12/Case-Study-Fenia-Example1.webp" 
           />
         )}
         {openExample === 3 && (
           <img 
             alt="Results Page" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example2.webp" 
+            src="/wp-content/2025/12/Case-Study-Fenia-Example2.webp" 
           />
         )}
         {openExample === 4 && (
           <img 
             alt="Case Study Examples" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Fenia-Example4.webp" 
+            src="/wp-content/2025/12/Case-Study-Fenia-Example4.webp" 
           />
         )}
       </ExampleModal>

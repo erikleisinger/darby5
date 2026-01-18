@@ -70,7 +70,7 @@ export default function CaseStudy() {
         <img 
           alt="" 
           className="w-full h-full object-cover object-center" 
-          src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Kinvest-Case-Study-Example-HERO.webp" 
+          src="/wp-content/2025/12/Kinvest-Case-Study-Example-HERO.webp" 
         />
       </div>
 
@@ -366,7 +366,7 @@ export default function CaseStudy() {
                 <img 
                   alt="Kinvest Homepage" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example1.webp" 
+                  src="/wp-content/2025/12/Case-Study-Kinvest-Example1.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -384,7 +384,7 @@ export default function CaseStudy() {
                 <img 
                   alt="Mini-Site Directory" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example2.webp" 
+                  src="/wp-content/2025/12/Case-Study-Kinvest-Example2.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -402,7 +402,7 @@ export default function CaseStudy() {
                 <img 
                   alt="Storytelling Visuals" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example3.webp" 
+                  src="/wp-content/2025/12/Case-Study-Kinvest-Example3.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -420,7 +420,7 @@ export default function CaseStudy() {
                 <img 
                   alt="Contact CTA" 
                   className="w-full h-auto object-cover" 
-                  src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example4.webp" 
+                  src="/wp-content/2025/12/Case-Study-Kinvest-Example4.webp" 
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
@@ -477,28 +477,28 @@ export default function CaseStudy() {
           <img 
             alt="Kinvest Homepage" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example1.webp" 
+            src="/wp-content/2025/12/Case-Study-Kinvest-Example1.webp" 
           />
         )}
         {openExample === 2 && (
           <img 
             alt="Mini-Site Directory" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example2.webp" 
+            src="/wp-content/2025/12/Case-Study-Kinvest-Example2.webp" 
           />
         )}
         {openExample === 3 && (
           <img 
             alt="Storytelling Visuals" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example3.webp" 
+            src="/wp-content/2025/12/Case-Study-Kinvest-Example3.webp" 
           />
         )}
         {openExample === 4 && (
           <img 
             alt="Contact CTA" 
             className="w-full h-auto rounded-[10px]" 
-            src="https://darbyyulecreative.studio/wp-content/uploads/2025/12/Case-Study-Kinvest-Example4.webp" 
+            src="/wp-content/2025/12/Case-Study-Kinvest-Example4.webp" 
           />
         )}
       </ExampleModal>
