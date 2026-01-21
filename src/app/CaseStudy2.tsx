@@ -6,9 +6,10 @@ import svgPaths from "../imports/svg-buwgyi628p";
 import { ExampleModal } from './components/ExampleModal';
 import WritingExample from '../imports/WritingExample-26-2001';
 import useScrollTop from './hooks/useScrollTop';
+import { CaseStudyNav } from './CaseStudyNav';
 export default function CaseStudy2() {
   useScrollTop();
-  const [isMenuSticky, setIsMenuSticky] = useState(false);
+
   // POPUP: Track which example is open
   const [openExample, setOpenExample] = useState<number | null>(null);
 
@@ -27,16 +28,7 @@ export default function CaseStudy2() {
     setOpenExample(openExample === totalExamples ? 1 : openExample + 1);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Sticky menu activates when scrolling past the hero section (approximately 645px from Figma)
-      const heroHeight = 850;
-      setIsMenuSticky(window.scrollY >= heroHeight);
-    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Smooth scroll to section
   const scrollToSection = (id: string) => {
@@ -58,7 +50,7 @@ export default function CaseStudy2() {
       {/* CASE STUDY: Back Button */}
       <button 
         onClick={() => window.history.back()}
-        className="absolute left-[40px] top-[24px] z-50 flex items-center hover:opacity-70 transition-opacity"
+        className="absolute left-[24px] top-[24px] cursor-pointer z-50 flex items-center hover:opacity-70 transition-opacity"
         aria-label="Go back"
       >
         <svg className="size-[24px]" fill="none" viewBox="0 0 24 24">
@@ -71,7 +63,7 @@ export default function CaseStudy2() {
       <div className="w-full h-screen aspect-[5/7] md:aspect-auto md:h-[600px] lg:h-[811px] relative overflow-hidden">
         <img 
           alt="" 
-          className="w-full h-full object-cover object-center" 
+          className="w-full h-[50%] md:h-full object-cover object-center" 
           src="/wp-content/2025/12/Pantegral-Case-Study-HERO.webp" 
         />
       </div>
@@ -109,53 +101,7 @@ export default function CaseStudy2() {
           </div>
         </div>
       </div>
-
-      {/* CASE STUDY: Sticky Menu */}
-      {/* FIX: Menu aligned with Outcomes section */}
-      {/* FIX: Prevented menu overlap with chips */}
-      <nav 
-        className={`${
-          isMenuSticky 
-            ? 'fixed top-[40px] left-[40px] lg:left-[calc(25vw-243px-40px)] z-40' 
-            : 'absolute top-[933px] left-[40px] lg:left-0'
-        } duration-300 bg-[#f1eee7] p-[24px] flex flex-col gap-[24px] w-[243px] hidden lg:flex`}
-           style={{
-          transition: 'left 0.3s'
-        }}
-      >
-        <button 
-          onClick={() => scrollToSection('outcome')}
-          className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[16px] tracking-[0.32px] uppercase text-left hover:text-[#8b9544] transition-colors"
-        >
-          Outcome
-        </button>
-        <div className="h-[1px] bg-[#818380] w-full" />
-        
-        <button 
-          onClick={() => scrollToSection('challenge')}
-          className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[16px] tracking-[0.32px] uppercase text-left hover:text-[#8b9544] transition-colors"
-        >
-          Challenge
-        </button>
-        <div className="h-[1px] bg-[#818380] w-full" />
-        
-        <button 
-          onClick={() => scrollToSection('method')}
-          className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[16px] tracking-[0.32px] uppercase text-left hover:text-[#8b9544] transition-colors"
-        >
-          Method
-        </button>
-        <div className="h-[1px] bg-[#818380] w-full" />
-        
-        <button 
-          onClick={() => scrollToSection('examples')}
-          className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[16px] tracking-[0.32px] uppercase text-left hover:text-[#8b9544] transition-colors"
-        >
-          Examples
-        </button>
-        <div className="h-[1px] bg-[#818380] w-full" />
-      </nav>
-
+<CaseStudyNav/>
       {/* Content Container */}
       <div className="relative w-full px-[20px] md:px-[40px] lg:px-0">
         {/* CASE STUDY: Outcome Section */}
@@ -265,7 +211,7 @@ export default function CaseStudy2() {
         </section>
 
         {/* CASE STUDY: Method Section */}
-        <section id="method" className="pb-[60px] md:pb-[80px] lg:pb-[100px]">
+        <section id="methods" className="pb-[60px] md:pb-[80px] lg:pb-[100px]">
           <div className="max-w-[879px] mx-auto lg:ml-[25%] flex flex-col gap-[24px]">
             <h2 className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-[#333] text-[18px] md:text-[20px] leading-[32px] tracking-[0.4px]">
               Method
