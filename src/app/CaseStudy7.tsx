@@ -40,7 +40,7 @@ export default function CaseStudy7() {
           <source media="(min-width: 1024px)" srcSet="/wp-content/2026/05/NRTS-HERO169.webp" />
           <img
             alt=""
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-cover object-top lg:object-center"
             src="/wp-content/2026/05/NRTS-HERO57.webp"
           />
         </picture>
