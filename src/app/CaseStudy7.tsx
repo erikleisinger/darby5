@@ -317,6 +317,7 @@ export default function CaseStudy7() {
                   alt="Mobile View"
                   className="w-full h-auto object-cover"
                   src="/wp-content/2026/05/NRTS-Example4.gif"
+                  loading="lazy"
                 />
               </button>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
