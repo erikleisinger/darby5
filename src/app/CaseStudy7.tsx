@@ -52,7 +52,7 @@ export default function CaseStudy7() {
 
             {/* CASE STUDY: Subtitle */}
             <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-[#555] text-[16px] md:text-[18px] lg:text-[20px] leading-[26px] md:leading-[28px] lg:leading-[32px] tracking-[0.4px] max-w-full lg:max-w-[800px]">
-              Ever build a reputation in your community, then have nowhere to send the people who hadn't heard of you yet? New Route Trail Solutions felt that gap.
+              New Route Trail Solutions had a reputation that travelled by word of mouth and nowhere to send the people who hadn't heard of them yet.
             </p>
 
             {/* CASE STUDY: Tags */}
@@ -158,7 +158,10 @@ export default function CaseStudy7() {
                 Challenge
               </h2>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[26px] md:leading-[32px] tracking-[0.64px]">
-                New Route Trail Solutions is a hybrid landscaping and trail-building company based in Prince George, BC. They take on fully custom projects for personal properties and commercial spaces, and built their original following through the mountain biking community. The quality of their work was never the issue — they were already well-known to the people who knew them. But outside that circle, they were unreachable. No website, no content, and no way for a new customer to find them, understand what they offered, or get in touch. A Google profile and a strong logo suite were carrying the entire load. For a company with the breadth and craft of New Route, that gap was costing them.
+                New Route Trail Solutions does work that's hard to put in a single category. They build custom landscapes and trails for personal properties and commercial spaces across Northern BC. They started in the mountain biking community in Prince George and grew from there. By the time we met them, they had a strong local reputation, a logo suite they were proud of, and no website.
+              </p>
+              <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[26px] md:leading-[32px] tracking-[0.64px]">
+                That last part was the problem. Outside their immediate community, they were invisible. A Google profile was their entire digital footprint. For new customers who hadn't heard of them through a friend, there was no path in. No way to understand what they offered, no way to reach them, and no way to trust them before picking up the phone.
               </p>
             </div>
 
@@ -207,7 +210,7 @@ export default function CaseStudy7() {
                   <path d={svgPaths.pf73b980} stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.25" />
                 </svg>
                 <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-white text-[16px] md:text-[20px] leading-[28px] md:leading-[32px] tracking-[0.4px]">
-                  Using empathy mapping and cultural research, we identified that New Route's customers value craftsmanship above speed or cost — people who want their space done right and are willing to wait for it. In Prince George, that customer responds to honesty and skill, not polish. The critical insight: craftsmanship lands where luxury doesn't.
+                  Used AI-assisted competitive research and social listening to identify what New Route's customers value — and what they picture when they hire someone to work on their land.
                 </p>
               </div>
 
@@ -218,7 +221,7 @@ export default function CaseStudy7() {
                   <path d={svgPaths.pf73b980} stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.25" />
                 </svg>
                 <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-white text-[16px] md:text-[20px] leading-[28px] md:leading-[32px] tracking-[0.4px]">
-                  Repositioned New Route's brand away from premium aesthetics and toward the language of skilled, honest work — reflecting the no-frills ethos of their community without underselling the quality of what they actually deliver.
+                  Repositioned the brand around craftsmanship rather than luxury, reflecting the no-frills, high-quality ethos of the Prince George community.
                 </p>
               </div>
 
@@ -229,7 +232,7 @@ export default function CaseStudy7() {
                   <path d={svgPaths.pf73b980} stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.25" />
                 </svg>
                 <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-white text-[16px] md:text-[20px] leading-[28px] md:leading-[32px] tracking-[0.4px]">
-                  Built a five-page website covering the full scope of New Route's services, with SEO-friendly copy written to introduce the company to people who had never heard of them while reinforcing trust with those who had.
+                  Wrote aspiration-led copy across five pages — focused on what life looks like after the project, not a list of what New Route offers.
                 </p>
               </div>
 
@@ -240,7 +243,7 @@ export default function CaseStudy7() {
                   <path d={svgPaths.pf73b980} stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.25" />
                 </svg>
                 <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-white text-[16px] md:text-[20px] leading-[28px] md:leading-[32px] tracking-[0.4px]">
-                  Designed the UX around a single priority — reducing the distance between finding New Route and contacting them. With a service offering this broad and this custom, the page doesn't try to explain everything. It earns the call.
+                  Built the site using AI-assisted vibe coding and migrated it into WordPress, with AI-generated texturing used in the visual design.
                 </p>
               </div>
             </div>
@@ -321,7 +324,11 @@ export default function CaseStudy7() {
         </section>
 
         {/* CASE STUDY: CTA */}
-        <div className="flex justify-center pb-[80px] md:pb-[100px]">
+        <div className="flex flex-col items-center gap-[24px] pb-[80px] md:pb-[100px]">
+          <p className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-[#333] text-[16px] md:text-[20px] leading-[28px] md:leading-[32px] tracking-[0.4px] text-center max-w-[640px] px-[20px]">
+            If your business is better known in person than it is online, that gap is costing you. Let's close it.
+          </p>
+        <div className="flex justify-center">
           <a href="/#contact-message" className="bg-[#f1eee7] border-[5px] border-[#8b9544] rounded-[5px] px-[16px] py-[8px] h-[54px] flex items-center gap-[12px] hover:bg-[#8b9544] hover:text-[#f1eee7] transition-colors group">
             <svg className="size-[24px]" fill="none" viewBox="0 0 24 24">
               <path d="M6 17L11 12L6 7" stroke="#8B9544" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.25" className="group-hover:stroke-[#f1eee7]" />
@@ -331,6 +338,7 @@ export default function CaseStudy7() {
               Let's Talk
             </span>
           </a>
+        </div>
         </div>
 
         {/* CASE STUDY: Pagination */}
