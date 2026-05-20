@@ -119,7 +119,7 @@ export default function CaseStudy2() {
               >
                 <div className="flex flex-col gap-[24px]">
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#f1eee7] text-[16px] leading-[32px] tracking-[0.64px]">
-                    Proposal Completion Rate
+                    Online Impressions
                   </p>
                   <div className="flex flex-col md:flex-row gap-[12px] md:gap-[24px] items-start md:items-end">
                     <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#f1eee7] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
@@ -145,10 +145,10 @@ export default function CaseStudy2() {
               >
                 <div className="flex flex-col gap-[24px]">
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#f1eee7] text-[16px] leading-[32px] tracking-[0.64px]">
-                    Proposal Onboarding Time
+                    Proposal & Onboarding Time
                   </p>
                   <div className="flex flex-col md:flex-row gap-[12px] md:gap-[24px] items-start md:items-end">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#39ff14] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#f1eee7] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
                       -40%
                     </p>
                     <div className="flex items-center gap-[4px]">
@@ -156,7 +156,7 @@ export default function CaseStudy2() {
                         <path d={svgPaths.p1c8006f1} fill="#39FF14" />
                       </svg>
                       <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#39ff14] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px]">
-                        Faster Start-to-Complete
+                        Faster Client Connection
                       </p>
                     </div>
                   </div>
