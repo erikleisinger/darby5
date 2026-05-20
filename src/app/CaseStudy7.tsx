@@ -36,11 +36,14 @@ export default function CaseStudy7() {
 
       {/* CASE STUDY: Hero Section */}
       <div className="w-full h-screen relative bg-[#111111]">
-        <img
-          alt=""
-          className="absolute inset-0 w-full h-full object-contain object-center"
-          src="/wp-content/2026/05/NRTS-HERO57.webp"
-        />
+        <picture className="absolute inset-0 w-full h-full">
+          <source media="(min-width: 1024px)" srcSet="/wp-content/2026/05/NRTS-HERO169.webp" />
+          <img
+            alt=""
+            className="w-full h-full object-contain object-center"
+            src="/wp-content/2026/05/NRTS-HERO57.webp"
+          />
+        </picture>
 
         {/* CASE STUDY: Title Card */}
         <div className="absolute left-0 bottom-0 bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
