@@ -35,15 +35,15 @@ export default function CaseStudy7() {
       </button>
 
       {/* CASE STUDY: Hero Section */}
-      <div className="w-full relative">
+      <div className="w-full h-screen md:h-[600px] lg:h-[811px] relative">
         <img
           alt=""
-          className="w-full h-auto block"
+          className="absolute inset-0 w-full h-full object-cover object-center"
           src="/wp-content/2026/05/NRTS-HERO57.webp"
         />
 
         {/* CASE STUDY: Title Card */}
-        <div className="absolute left-0 bottom-0 bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
+        <div className="absolute left-0 bottom-0 md:bottom-auto md:top-[400px] lg:top-[645px] bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
           <div className="flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px]">
             {/* CASE STUDY: Main Title */}
             <h1 className="font-['Neue_Haas_Grotesk_Display_Pro:95_Black',sans-serif] text-[#222021] text-[32px] md:text-[48px] lg:text-[64px] leading-[1.1] lg:leading-[55px] tracking-[-1.5px] lg:tracking-[-2.56px] uppercase">
@@ -98,7 +98,7 @@ export default function CaseStudy7() {
       {/* Content Container */}
       <div className="relative w-full px-[20px] md:px-[40px] lg:px-0">
         {/* CASE STUDY: Outcome Section */}
-        <section id="outcome" className="pt-[60px] md:pt-[80px] lg:pt-[100px] pb-[60px] md:pb-[80px] lg:pb-[100px]">
+        <section id="outcome" className="pt-[180px] md:pt-[200px] lg:pt-[220px] pb-[60px] md:pb-[80px] lg:pb-[100px]">
           <div className="max-w-[879px] mx-auto lg:ml-[25%] flex flex-col gap-[24px]">
             <h2 className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-[#333] text-[18px] md:text-[20px] leading-[32px] tracking-[0.4px]">
               Outcome
