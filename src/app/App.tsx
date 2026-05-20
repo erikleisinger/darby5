@@ -16,6 +16,7 @@ const imgFrame47 = "/wp-content/2025/12/c78d59df8eded3238410432d7c04b50cfa4ed464
 const imgAuthenticity = "/wp-content/2025/12/Authenticity-Card.webp";
 const imgDemoReel = "/wp-content/2025/12/DemoReel-Card.webp";
 const imgDontManage = "/wp-content/2025/12/DontManage-Card.webp";
+const imgNRTS = "/wp-content/2026/05/NRTS-HERO169.webp";
 // ASSET REPLACED: About section image (now imported above)
 // ASSET REPLACED: Collaborators logos
 const imgLogo13 = "/wp-content/2025/11/Logo3.webp";
@@ -35,10 +36,10 @@ const imgLogoAlt1 = "/wp-content/2025/12/Logo White.png";
 import { imgGroup, imgGroup1, imgGroup2 } from "../imports/svg-7eaib";
 import CaseStudy from './CaseStudy';
 import CaseStudy2 from './CaseStudy2';
-import CaseStudy3 from './CaseStudy3';
 import CaseStudy4 from './CaseStudy4';
 import CaseStudy5 from './CaseStudy5';
 import CaseStudy6 from './CaseStudy6';
+import CaseStudy7 from './CaseStudy7';
 import ContactForm from './ContactForm';
 
 function LandingPage() {
@@ -258,8 +259,42 @@ function LandingPage() {
             {/* Case Study Cards */}
             {/* MOTION: Staggered entrance for story cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[40px]">
-              {/* Card 1 — The Cost of Competing With Yourself */}
-              <Link to="/case-study/kinvest" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-1">
+              {/* Card 1 — Known Everywhere You Can't See */}
+              <Link to="/case-study/nrts" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-1">
+                <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
+                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgNRTS} />
+                  <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
+                </div>
+                <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
+                <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
+                  <div className="flex items-start w-full">
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">Known Everywhere You Can't See</p>
+                  </div>
+                  <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
+                    <div className="bg-[#555] relative rounded-[10px]">
+                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
+                        <div className="w-4 h-4 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M19 32c-7.732 0-14-6.268-14-14S11.268 4 19 4s14 6.268 14 14"/><path d="M44 18H18v26h26z"/></g></svg>
+                        </div>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Content Design</p>
+                      </div>
+                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
+                    </div>
+                    <div className="bg-[#555] relative rounded-[10px]">
+                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
+                        <div className="w-4 h-4 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
+                        </div>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">UX Design</p>
+                      </div>
+                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 2 — The Cost of Competing With Yourself */}
+              <Link to="/case-study/kinvest" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-2">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame50} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -292,8 +327,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 2 — Authenticity by Design */}
-              <Link to="/case-study/authenticity" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-2">
+              {/* Card 3 — Authenticity by Design */}
+              <Link to="/case-study/authenticity" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-3">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgAuthenticity} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -335,8 +370,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 3 — The Amazing Thing You Can't Explain */}
-              <Link to="/case-study/pantegral" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-3">
+              {/* Card 4 — The Amazing Thing You Can't Explain */}
+              <Link to="/case-study/pantegral" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-4">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame49} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -369,8 +404,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 4 — DYCS 2026 Demo Reel */}
-              <Link to="/case-study/demo-reel" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-4">
+              {/* Card 5 — DYCS 2026 Demo Reel */}
+              <Link to="/case-study/demo-reel" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-5">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgDemoReel} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -403,8 +438,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 5 — Don't Manage, Do Your Real Work */}
-              <Link to="/case-study/dont-manage" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-5">
+              {/* Card 6 — Don't Manage, Do Your Real Work */}
+              <Link to="/case-study/dont-manage" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-6">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgDontManage} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -437,39 +472,6 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 6 — Teaching the Product to Sell Itself */}
-              <Link to="/case-study/product-self-sell" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-6">
-                <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame47} />
-                  <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
-                </div>
-                <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
-                <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
-                  <div className="flex items-start w-full">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">Teaching the Product to Sell Itself</p>
-                  </div>
-                  <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
-                    <div className="bg-[#555] relative rounded-[10px]">
-                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
-                        <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
-                        </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">UX</p>
-                      </div>
-                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
-                    </div>
-                    <div className="bg-[#555] relative rounded-[10px]">
-                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
-                        <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M19 32c-7.732 0-14-6.268-14-14S11.268 4 19 4s14 6.268 14 14"/><path d="M44 18H18v26h26z"/></g></svg>
-                        </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Content</p>
-                      </div>
-                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
             </div>
           </div>
         </div>
@@ -694,11 +696,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/case-study/nrts" element={<CaseStudy7 />} />
         <Route path="/case-study/kinvest" element={<CaseStudy />} />
-        {/* LINKED: Card "The Amazing Thing You Can't Explain" → Case Study page */}
         <Route path="/case-study/pantegral" element={<CaseStudy2 />} />
-        {/* LINKED: Card "Teaching the Product to Sell Itself" → Case Study page */}
-        <Route path="/case-study/product-self-sell" element={<CaseStudy3 />} />
         <Route path="/case-study/authenticity" element={<CaseStudy4 />} />
         <Route path="/case-study/demo-reel" element={<CaseStudy5 />} />
         <Route path="/case-study/dont-manage" element={<CaseStudy6 />} />
