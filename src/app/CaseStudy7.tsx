@@ -35,10 +35,10 @@ export default function CaseStudy7() {
       </button>
 
       {/* CASE STUDY: Hero Section */}
-      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[80vh] relative">
+      <div className="w-full relative">
         <img
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="w-full h-auto block"
           src="/wp-content/2026/05/NRTS-HERO57.webp"
         />
 
@@ -98,7 +98,7 @@ export default function CaseStudy7() {
       {/* Content Container */}
       <div className="relative w-full px-[20px] md:px-[40px] lg:px-0">
         {/* CASE STUDY: Outcome Section */}
-        <section id="outcome" className="pt-[180px] md:pt-[200px] lg:pt-[220px] pb-[60px] md:pb-[80px] lg:pb-[100px]">
+        <section id="outcome" className="pt-[60px] md:pt-[80px] lg:pt-[100px] pb-[60px] md:pb-[80px] lg:pb-[100px]">
           <div className="max-w-[879px] mx-auto lg:ml-[25%] flex flex-col gap-[24px]">
             <h2 className="font-['Neue_Haas_Grotesk_Display_Pro:65_Medium',sans-serif] text-[#333] text-[18px] md:text-[20px] leading-[32px] tracking-[0.4px]">
               Outcome
