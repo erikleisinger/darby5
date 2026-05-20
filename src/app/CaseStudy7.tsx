@@ -35,7 +35,7 @@ export default function CaseStudy7() {
       </button>
 
       {/* CASE STUDY: Hero Section */}
-      <div className="w-full h-screen relative">
+      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[80vh] relative">
         <img
           alt=""
           className="absolute inset-0 w-full h-full object-cover object-center"
