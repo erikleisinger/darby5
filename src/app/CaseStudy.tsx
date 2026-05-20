@@ -153,21 +153,11 @@ export default function CaseStudy() {
               >
                 <div className="flex flex-col gap-[24px]">
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#f1eee7] text-[16px] leading-[32px] tracking-[0.64px]">
-                    Proposal Completion Rate
+                    Online Competition
                   </p>
-                  <div className="flex flex-col md:flex-row gap-[12px] md:gap-[24px] items-start md:items-end">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#f1eee7] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
-                      45%
-                    </p>
-                    <div className="flex items-center gap-[4px]">
-                      <svg className="size-[24px]" fill="none" viewBox="0 0 24 24">
-                        <path d={svgPaths.p1c8006f1} fill="#39FF14" />
-                      </svg>
-                      <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#39ff14] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px]">
-                        Monthly Growth
-                      </p>
-                    </div>
-                  </div>
+                  <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#39ff14] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
+                    ELIMINATED
+                  </p>
                 </div>
                 <div className="h-[1px] bg-[#f1eee7] w-[70.5px]" />
               </div>
@@ -179,18 +169,18 @@ export default function CaseStudy() {
               >
                 <div className="flex flex-col gap-[24px]">
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#f1eee7] text-[16px] leading-[32px] tracking-[0.64px]">
-                    Proposal Onboarding Time
+                    Lead Accuracy
                   </p>
                   <div className="flex flex-col md:flex-row gap-[12px] md:gap-[24px] items-start md:items-end">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#39ff14] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
-                      -40%
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic text-[#f1eee7] text-[36px] md:text-[48px] leading-[1] tracking-[-0.96px] uppercase">
+                      85%+
                     </p>
                     <div className="flex items-center gap-[4px]">
                       <svg className="size-[24px]" fill="none" viewBox="0 0 24 24">
                         <path d={svgPaths.p1c8006f1} fill="#39FF14" />
                       </svg>
                       <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#39ff14] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px]">
-                        Faster Completed Proposals
+                        Improved Lead Accuracy
                       </p>
                     </div>
                   </div>
