@@ -533,11 +533,10 @@ function LandingPage() {
             
             {/* About Content */}
             {/* MOTION: Staggered entrance for about content */}
-            <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-[80px] items-center w-full">
-              {/* Photo */}
-              {/* CHANGE 2: Width constraint - max 429px */}
+            <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-[80px] items-stretch w-full">
+              {/* Photo — fills column height on desktop to match bio */}
               <div className="w-full lg:w-1/2 flex-shrink-0" data-animate="fade">
-                <img alt="" src={DYCS_About} className="w-full h-auto" />
+                <img alt="" src={DYCS_About} className="w-full h-auto lg:h-full object-cover" />
               </div>
 
               {/* Bio Text */}

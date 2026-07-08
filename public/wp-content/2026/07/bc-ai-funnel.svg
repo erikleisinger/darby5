@@ -1,29 +1,37 @@
-<svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
-  <rect width="880" height="420" fill="#f7f4ef"/>
+<svg viewBox="0 0 880 880" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="880" height="880" fill="#f1eee7"/>
 
-  <text x="60" y="56" font-size="13" letter-spacing="2.5" fill="#8a8378" font-weight="600">THE STRATEGIC SPINE</text>
-  <text x="60" y="90" font-size="27" fill="#2b2a27" font-weight="700">Awareness &#8594; Credibility &#8594; Leads</text>
+  <!-- inner card holding the funnel diagram -->
+  <rect x="40" y="56" width="800" height="384" rx="18" fill="#f7f4ef"/>
 
-  <!-- Awareness -->
-  <rect x="60" y="140" width="200" height="200" rx="10" fill="#3f3d3a"/>
-  <text x="160" y="248" text-anchor="middle" font-size="21" fill="#f7f4ef" font-weight="700">Awareness</text>
+  <g transform="translate(0,40)">
+    <text x="80" y="56" font-size="13" letter-spacing="2.5" fill="#8a8378" font-weight="600">THE STRATEGIC SPINE</text>
+    <text x="80" y="90" font-size="27" fill="#2b2a27" font-weight="700">Awareness &#8594; Credibility &#8594; Leads</text>
 
-  <!-- arrow 1 -->
-  <path d="M287 231 L301 240 L287 249" stroke="#b7ad9e" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Awareness -->
+    <rect x="80" y="140" width="200" height="200" rx="10" fill="#3f3d3a"/>
+    <text x="180" y="248" text-anchor="middle" font-size="21" fill="#f7f4ef" font-weight="700">Awareness</text>
 
-  <!-- Credibility (the trust stage, highlighted) -->
-  <rect x="330" y="190" width="200" height="150" rx="10" fill="#d9b26a"/>
-  <text x="430" y="273" text-anchor="middle" font-size="21" fill="#2b2a27" font-weight="700">Credibility</text>
+    <!-- arrow 1 -->
+    <path d="M307 231 L321 240 L307 249" stroke="#b7ad9e" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- arrow 2 -->
-  <path d="M557 256 L571 265 L557 274" stroke="#b7ad9e" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Credibility (the trust stage, highlighted) -->
+    <rect x="350" y="190" width="200" height="150" rx="10" fill="#d9b26a"/>
+    <text x="450" y="273" text-anchor="middle" font-size="21" fill="#2b2a27" font-weight="700">Credibility</text>
 
-  <!-- Leads -->
-  <rect x="600" y="240" width="200" height="100" rx="10" fill="#3f3d3a"/>
-  <text x="700" y="297" text-anchor="middle" font-size="21" fill="#f7f4ef" font-weight="700">Leads</text>
+    <!-- arrow 2 -->
+    <path d="M577 256 L591 265 L577 274" stroke="#b7ad9e" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- descriptors -->
-  <text x="160" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">Organic reach, community-relevant content</text>
-  <text x="430" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">A human voice people actually trust</text>
-  <text x="700" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">Attention becomes community leads</text>
+    <!-- Leads -->
+    <rect x="620" y="240" width="200" height="100" rx="10" fill="#3f3d3a"/>
+    <text x="720" y="297" text-anchor="middle" font-size="21" fill="#f7f4ef" font-weight="700">Leads</text>
+
+    <!-- descriptors -->
+    <text x="180" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">Organic reach, community-relevant content</text>
+    <text x="450" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">A human voice people actually trust</text>
+    <text x="720" y="372" text-anchor="middle" font-size="12.5" fill="#6b6459">Attention becomes community leads</text>
+  </g>
+
+  <!-- title -->
+  <text x="440" y="536" text-anchor="middle" font-size="30" fill="#2b2a27" font-weight="700">The Awareness to Credibility to Leads Funnel</text>
 </svg>

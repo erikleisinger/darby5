@@ -1,24 +1,9 @@
-import { useEffect, useState } from 'react';
 import svgPaths from "../imports/svg-buwgyi628p";
-import { ExampleModal } from './components/ExampleModal';
 import useScrollTop from './hooks/useScrollTop';
 import { CaseStudyNav } from './CaseStudyNav';
 
 export default function CaseStudy8() {
   useScrollTop();
-
-  const [openExample, setOpenExample] = useState<number | null>(null);
-  const totalExamples = 4;
-
-  const handlePrevious = () => {
-    if (openExample === null) return;
-    setOpenExample(openExample === 1 ? totalExamples : openExample - 1);
-  };
-
-  const handleNext = () => {
-    if (openExample === null) return;
-    setOpenExample(openExample === totalExamples ? 1 : openExample + 1);
-  };
 
   return (
     <div className="bg-[#f1eee7] relative min-h-screen w-full">
@@ -34,13 +19,15 @@ export default function CaseStudy8() {
       </button>
 
       {/* Hero Section */}
-      {/* TODO: Replace with dedicated hero image when available */}
       <div className="w-full h-screen md:h-[600px] lg:h-[811px] relative">
-        <img
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          src="/wp-content/2026/07/BCAI-AuthorityContent.webp"
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet="/wp-content/2026/07/BCAI-Card-169.webp" />
+          <img
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-top lg:object-center"
+            src="/wp-content/2026/07/BCAI-Card-57.webp"
+          />
+        </picture>
 
         {/* Title Card */}
         <div className="absolute left-0 bottom-0 md:bottom-auto md:top-[400px] lg:top-[645px] bg-[#f1eee7] rounded-tr-[10px] px-[20px] md:px-[30px] lg:px-[40px] py-[20px] md:py-[24px] max-w-full md:max-w-[90%] lg:max-w-none">
@@ -264,73 +251,73 @@ export default function CaseStudy8() {
         {/* Examples Section */}
         <section id="examples" className="pb-[80px] md:pb-[100px] lg:pb-[120px]">
           <div className="max-w-[770px] mx-auto lg:ml-[calc(25%+58px)] grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[40px]">
-            {/* Example 1 — Funnel SVG */}
+            {/* Example 1 — Funnel (self-contained square graphic) */}
             <div className="flex flex-col gap-[16px] items-center">
-              <button
-                onClick={() => setOpenExample(1)}
-                className="w-full rounded-[9.322px] overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-              >
+              <div className="w-full rounded-[9.322px] overflow-hidden">
                 <img
-                  alt="Awareness to Credibility to Leads funnel"
-                  className="w-full h-auto object-cover"
+                  alt="The Awareness to Credibility to Leads funnel"
+                  className="w-full h-auto aspect-square object-cover"
                   src="/wp-content/2026/07/bc-ai-funnel.svg"
                 />
-              </button>
-              <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
-                The Awareness to Credibility to Leads Funnel
-              </p>
+              </div>
             </div>
 
-            {/* Example 2 — Awareness */}
-            <div className="flex flex-col gap-[16px] items-center">
-              <button
-                onClick={() => setOpenExample(2)}
-                className="w-full rounded-[9.322px] overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-              >
+            {/* Example 2 — Awareness (links to Instagram) */}
+            <a
+              href="https://www.instagram.com/p/DY0c1AIAf38/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-[16px] items-center group"
+            >
+              <div className="w-full rounded-[9.322px] overflow-hidden cursor-pointer group-hover:opacity-90 transition-opacity">
                 <img
                   alt="Awareness Example"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto aspect-square object-cover"
                   src="/wp-content/2026/07/BCAI-EngagementExample.webp"
                 />
-              </button>
+              </div>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
                 Awareness Example
               </p>
-            </div>
+            </a>
 
-            {/* Example 3 — Credibility */}
-            <div className="flex flex-col gap-[16px] items-center">
-              <button
-                onClick={() => setOpenExample(3)}
-                className="w-full rounded-[9.322px] overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-              >
+            {/* Example 3 — Credibility (links to Instagram) */}
+            <a
+              href="https://www.instagram.com/p/DX-MLnzjEIS/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-[16px] items-center group"
+            >
+              <div className="w-full rounded-[9.322px] overflow-hidden cursor-pointer group-hover:opacity-90 transition-opacity">
                 <img
                   alt="Credibility Example"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto aspect-square object-cover"
                   src="/wp-content/2026/07/BCAI-AuthorityContent.webp"
                 />
-              </button>
+              </div>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
                 Credibility Example
               </p>
-            </div>
+            </a>
 
-            {/* Example 4 — Leads */}
-            <div className="flex flex-col gap-[16px] items-center">
-              <button
-                onClick={() => setOpenExample(4)}
-                className="w-full rounded-[9.322px] overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-              >
+            {/* Example 4 — Leads (links to Instagram) */}
+            <a
+              href="https://www.instagram.com/p/DaTOLr_FHq6/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-[16px] items-center group"
+            >
+              <div className="w-full rounded-[9.322px] overflow-hidden cursor-pointer group-hover:opacity-90 transition-opacity">
                 <img
                   alt="Leads Example"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto aspect-square object-cover"
                   src="/wp-content/2026/07/BCAI-LeadExample.webp"
                 />
-              </button>
+              </div>
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] text-[#333] text-[14px] md:text-[16px] leading-[32px] tracking-[0.64px] text-center">
                 Leads Example
               </p>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -368,43 +355,6 @@ export default function CaseStudy8() {
           </button>
         </div>
       </div>
-
-      {/* Example Modal */}
-      <ExampleModal
-        isOpen={openExample !== null}
-        onClose={() => setOpenExample(null)}
-        onPrevious={handlePrevious}
-        onNext={handleNext}
-      >
-        {openExample === 1 && (
-          <img
-            alt="Awareness to Credibility to Leads funnel"
-            className="w-full h-auto rounded-[10px]"
-            src="/wp-content/2026/07/bc-ai-funnel.svg"
-          />
-        )}
-        {openExample === 2 && (
-          <img
-            alt="Awareness Example"
-            className="w-full h-auto rounded-[10px]"
-            src="/wp-content/2026/07/BCAI-EngagementExample.webp"
-          />
-        )}
-        {openExample === 3 && (
-          <img
-            alt="Credibility Example"
-            className="w-full h-auto rounded-[10px]"
-            src="/wp-content/2026/07/BCAI-AuthorityContent.webp"
-          />
-        )}
-        {openExample === 4 && (
-          <img
-            alt="Leads Example"
-            className="w-full h-auto rounded-[10px]"
-            src="/wp-content/2026/07/BCAI-LeadExample.webp"
-          />
-        )}
-      </ExampleModal>
     </div>
   );
 }
