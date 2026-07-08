@@ -17,7 +17,6 @@ const imgAuthenticity = "/wp-content/2025/12/Authenticity-Card.webp";
 const imgDemoReel = "/wp-content/2025/12/DemoReel-Card.webp";
 const imgDontManage = "/wp-content/2025/12/DontManage-Card.webp";
 const imgNRTS = "/wp-content/2026/05/NRTS-HERO169.webp";
-const imgBCAI = "/wp-content/2026/07/BCAI-FunnelExample.webp";
 // ASSET REPLACED: About section image (now imported above)
 // ASSET REPLACED: Collaborators logos
 const imgLogo13 = "/wp-content/2025/11/Logo3.webp";
@@ -309,7 +308,10 @@ function LandingPage() {
               {/* Card 2 — Finding the Humanity in AI */}
               <Link to="/case-study/bc-ai" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-2">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgBCAI} />
+                  <picture className="absolute w-full h-full">
+                    <source media="(min-width: 1024px)" srcSet="/wp-content/2026/07/BCAI-Card-169.webp" />
+                    <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src="/wp-content/2026/07/BCAI-Card-57.webp" />
+                  </picture>
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
                 </div>
                 <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
