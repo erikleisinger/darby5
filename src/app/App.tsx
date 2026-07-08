@@ -541,17 +541,21 @@ function LandingPage() {
               {/* Bio Text */}
               <div className="flex flex-col gap-6 md:gap-8 w-full lg:w-1/2" data-animate="stagger-2">
                 <div className="flex flex-col gap-4 md:gap-6">
-                  {/* CHANGE 4: Updated About text as specified */}
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                   Darby Yule Creative Studios designs work that reduces friction, earns trust, and meets people where they are. The studio operates across digital systems and storytelling, shaping work with care. We partner with agencies and brands that need to move decisively and hit well above their weight.
+                    Most of my job is telling companies that their problem isn't the thing they think it is.
                   </p>
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                   Work at Darby Yule Creative Studios begins with people. Each project starts with in-depth research, then moves through deliberate shaping into disciplined execution. Process matters because it produces work with coherence and durability. Every output is treated as part of a larger system, designed to function together and finished with precision.
+                    I'm Darby Yule, a content and brand strategist. When a site looks fine but doesn't convert, people reach for a redesign. It's normally not a design problem. It's that what you say about the product and what the product actually does have come apart, and no one owns the space between them. I do.
                   </p>
                   <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
-                    We partner with organizations that take how they show up seriously. Our strongest work requires well-informed, collaborative teams committed to a holistic and disciplined approach to design. Success looks like alignment between a company and its audience, supported by sound decisions and grounded craft.
+                    I'm one person for work most teams split across two. I start with research and competitive analysis, use it to build the positioning and messaging, then design the content, UX writing, and go-to-market that carry it, so every part says the same thing. Strategy and execution from the same person, which is why they don't drift.
                   </p>
-                
+                  <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
+                    I've done this for SaaS, healthtech-adjacent, nonprofit, and music and creative teams. I came up through UX design and years of building my own independent music brand, so I think about product and audience at once. I run Darby Yule Creative Studio, and I'm based in North Vancouver, working remotely across North America.
+                  </p>
+                  <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[26px] md:leading-[28px] lg:leading-[32px] text-[#555] text-[14px] md:text-[16px] lg:text-[18px] tracking-[0.32px]">
+                    Work speaks louder than a bio though. Details are up top.
+                  </p>
                 </div>
               </div>
             </div>
