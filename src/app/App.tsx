@@ -17,6 +17,7 @@ const imgAuthenticity = "/wp-content/2025/12/Authenticity-Card.webp";
 const imgDemoReel = "/wp-content/2025/12/DemoReel-Card.webp";
 const imgDontManage = "/wp-content/2025/12/DontManage-Card.webp";
 const imgNRTS = "/wp-content/2026/05/NRTS-HERO169.webp";
+const imgBCAI = "/wp-content/2026/07/BCAI-FunnelExample.webp";
 // ASSET REPLACED: About section image (now imported above)
 // ASSET REPLACED: Collaborators logos
 const imgLogo13 = "/wp-content/2025/11/Logo3.webp";
@@ -40,6 +41,7 @@ import CaseStudy4 from './CaseStudy4';
 import CaseStudy5 from './CaseStudy5';
 import CaseStudy6 from './CaseStudy6';
 import CaseStudy7 from './CaseStudy7';
+import CaseStudy8 from './CaseStudy8';
 import ContactForm from './ContactForm';
 
 function LandingPage() {
@@ -203,7 +205,7 @@ function LandingPage() {
           <div className="flex flex-col gap-4 items-start w-full lg:items-start lg:max-w-3xl" data-animate>
             <div className="w-full">
               <p className="font-['Neue_Haas_Grotesk_Display_Pro:95_Black',sans-serif] leading-[1.1] lg:leading-[55px] text-[#333] text-[36px] sm:text-[48px] lg:text-[64px] tracking-[-1.5px] lg:tracking-[-2.56px] uppercase">
-                <span className="inline lg:inline">Great Design Begins with</span>
+                <span className="inline lg:inline">Great Content Begins with</span>
                 <br className="block lg:hidden" />
                 {
                   showWord &&                 <span className="text-[#8b9544] cycling-word inline lg:inline" style={{
@@ -231,7 +233,7 @@ function LandingPage() {
             {/* Headline */}
             <p className="font-['Neue_Haas_Grotesk_Display_Pro:75_Bold',sans-serif] leading-tight md:leading-normal text-[#333] text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] text-center tracking-[1.2px] md:tracking-[1.92px] uppercase px-4 md:px-8" data-animate="stagger-2">
               <span className="text-[#8b9544]">Brands need a heartbeat.</span>
-              <span> We Craft strategic, high-impact Web Content that resonates with real people in real moments.</span>
+              <span> I craft strategic, high-impact Web Content that resonates with real people in real moments.</span>
             </p>
 
             {/* Bottom Line */}
@@ -258,17 +260,19 @@ function LandingPage() {
             
             {/* Case Study Cards */}
             {/* MOTION: Staggered entrance for story cards */}
+            {/* HIDDEN: NRTS (/case-study/nrts) and Demo Reel (/case-study/demo-reel) removed from grid — routes and files intact */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[40px]">
-              {/* Card 1 — Known Everywhere You Can't See */}
-              <Link to="/case-study/nrts" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-1">
+
+              {/* Card 1 — The Amazing Thing You Can't Explain */}
+              <Link to="/case-study/pantegral" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-1">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgNRTS} />
+                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame49} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
                 </div>
                 <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
                 <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
                   <div className="flex items-start w-full">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">Known Everywhere You Can't See</p>
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">The Amazing Thing You Can't Explain</p>
                   </div>
                   <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
                     <div className="bg-[#555] relative rounded-[10px]">
@@ -276,41 +280,16 @@ function LandingPage() {
                         <div className="w-4 h-4 flex items-center justify-center">
                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M19 32c-7.732 0-14-6.268-14-14S11.268 4 19 4s14 6.268 14 14"/><path d="M44 18H18v26h26z"/></g></svg>
                         </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Content Design</p>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Content</p>
                       </div>
                       <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
                     </div>
                     <div className="bg-[#555] relative rounded-[10px]">
                       <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><rect width="36" height="20" x="6" y="6" rx="2"/><path strokeLinecap="round" d="M14 13h8m-8 6h20M8 44l4.889-6h21.778L40 44M24 26v18"/></g></svg>
                         </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">UX Design</p>
-                      </div>
-                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Card 2 — The Cost of Competing With Yourself */}
-              <Link to="/case-study/kinvest" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-2">
-                <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame50} />
-                  <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
-                </div>
-                <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
-                <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
-                  <div className="flex items-start w-full">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">The Cost of Competing With Yourself</p>
-                  </div>
-                  <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
-                    <div className="bg-[#555] relative rounded-[10px]">
-                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
-                        <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
-                        </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">UX</p>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Writing</p>
                       </div>
                       <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
                     </div>
@@ -320,6 +299,49 @@ function LandingPage() {
                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"/><path d="M24 44c7.732 0 14-6.268 14-14s-6.268-14-14-14s-14 6.268-14 14s6.268 14 14 14Z"/><path d="M24 44a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/></g></svg>
                         </div>
                         <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Research</p>
+                      </div>
+                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 2 — Finding the Humanity in AI */}
+              <Link to="/case-study/bc-ai" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-2">
+                <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
+                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgBCAI} />
+                  <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
+                </div>
+                <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
+                <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
+                  <div className="flex items-start w-full">
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">Finding the Humanity in AI</p>
+                  </div>
+                  <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
+                    <div className="bg-[#555] relative rounded-[10px]">
+                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
+                        <div className="w-4 h-4 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
+                        </div>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Strategy</p>
+                      </div>
+                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
+                    </div>
+                    <div className="bg-[#555] relative rounded-[10px]">
+                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
+                        <div className="w-4 h-4 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M44 8H4v30h15l5 5l5-5h15z"/><circle cx="24" cy="19" r="5"/><path d="M33 32c0-4.418-4.03-8-9-8s-9 3.582-9 8"/></g></svg>
+                        </div>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Social</p>
+                      </div>
+                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
+                    </div>
+                    <div className="bg-[#555] relative rounded-[10px]">
+                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
+                        <div className="w-4 h-4 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"/><path d="M24 44c7.732 0 14-6.268 14-14s-6.268-14-14-14s-14 6.268-14 14s6.268 14 14 14Z"/><path d="M24 44a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/></g></svg>
+                        </div>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Research</p>
                       </div>
                       <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
                     </div>
@@ -370,33 +392,33 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 4 — The Amazing Thing You Can't Explain */}
-              <Link to="/case-study/pantegral" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-4">
+              {/* Card 4 — The Cost of Competing With Yourself */}
+              <Link to="/case-study/kinvest" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-4">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame49} />
+                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgFrame50} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
                 </div>
                 <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
                 <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
                   <div className="flex items-start w-full">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">The Amazing Thing You Can't Explain</p>
+                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">The Cost of Competing With Yourself</p>
                   </div>
                   <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
                     <div className="bg-[#555] relative rounded-[10px]">
                       <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M19 32c-7.732 0-14-6.268-14-14S11.268 4 19 4s14 6.268 14 14"/><path d="M44 18H18v26h26z"/></g></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M24 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 34a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 27a3 3 0 1 0 0-6a3 3 0 0 0 0 6m34 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M24.197 15.744a8.99 8.99 0 0 0 7.438-3.931a14.5 14.5 0 0 1 4.686 4.498A9 9 0 0 0 32 24a9 9 0 0 0 4.527 7.811a14.5 14.5 0 0 1-4.426 4.532a9 9 0 0 0-7.905-4.694c-3.4 0-6.36 1.885-7.89 4.668a14.5 14.5 0 0 1-4.494-4.683a8.99 8.99 0 0 0 3.93-7.438a8.99 8.99 0 0 0-3.907-7.422a14.5 14.5 0 0 1 4.94-4.938a8.99 8.99 0 0 0 7.42 3.907"/></g></svg>
                         </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Content</p>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">UX</p>
                       </div>
                       <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
                     </div>
                     <div className="bg-[#555] relative rounded-[10px]">
                       <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><rect width="36" height="20" x="6" y="6" rx="2"/><path strokeLinecap="round" d="M14 13h8m-8 6h20M8 44l4.889-6h21.778L40 44M24 26v18"/></g></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"/><path d="M24 44c7.732 0 14-6.268 14-14s-6.268-14-14-14s-14 6.268-14 14s6.268 14 14 14Z"/><path d="M24 44a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/></g></svg>
                         </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Writing</p>
+                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] text-center whitespace-nowrap tracking-[0.64px]">Research</p>
                       </div>
                       <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
                     </div>
@@ -404,42 +426,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 5 — DYCS 2026 Demo Reel */}
-              <Link to="/case-study/demo-reel" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-5">
-                <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
-                  <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgDemoReel} />
-                  <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
-                </div>
-                <div aria-hidden="true" className="absolute border-[#818380] border-4 md:border-[6px] border-solid inset-[-4px] md:inset-[-6px] pointer-events-none rounded-[14px] md:rounded-[16px]" />
-                <div className="flex flex-col h-full items-end justify-between relative z-10 w-full">
-                  <div className="flex items-start w-full">
-                    <p className="font-['Neue_Haas_Grotesk_Display_Pro:96_Black_Italic',sans-serif] italic leading-tight text-[#e1c78f] text-[32px] md:text-[40px] lg:text-[48px] tracking-[-0.96px] uppercase">DYCS 2026 Demo Reel</p>
-                  </div>
-                  <div className="flex gap-3 md:gap-[16px] items-start justify-end flex-wrap">
-                    <div className="bg-[#555] relative rounded-[10px]">
-                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
-                        <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinejoin="round" strokeWidth="4"><path d="M19 32c-7.732 0-14-6.268-14-14S11.268 4 19 4s14 6.268 14 14"/><path d="M44 18H18v26h26z"/></g></svg>
-                        </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Content</p>
-                      </div>
-                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
-                    </div>
-                    <div className="bg-[#555] relative rounded-[10px]">
-                      <div className="flex gap-2 items-center justify-center px-3 md:px-[16px] py-2 md:py-[8px] rounded-[inherit]">
-                        <div className="w-4 h-4 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" className="w-full h-full"><g fill="none" stroke="#F1EEE7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M44 8H4v30h15l5 5l5-5h15z"/><circle cx="24" cy="19" r="5"/><path d="M33 32c0-4.418-4.03-8-9-8s-9 3.582-9 8"/></g></svg>
-                        </div>
-                        <p className="font-['Neue_Haas_Grotesk_Display_Pro:55_Roman',sans-serif] leading-[28px] md:leading-[32px] text-[#f1eee7] text-[14px] md:text-[16px] whitespace-nowrap tracking-[0.64px]">Social Media</p>
-                      </div>
-                      <div aria-hidden="true" className="absolute border-[#ccc] border-[2px] md:border-[3px] border-solid inset-0 pointer-events-none rounded-[10px]" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Card 6 — Don't Manage, Do Your Real Work */}
-              <Link to="/case-study/dont-manage" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-6">
+              {/* Card 5 — Don't Manage, Do Your Real Work */}
+              <Link to="/case-study/dont-manage" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-5">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgDontManage} />
                   <div className="absolute bg-gradient-to-b from-[#000000] from-[18.75%] inset-0 rounded-[10px] to-[rgba(0,0,0,0)]" />
@@ -484,7 +472,7 @@ function LandingPage() {
             {[
               {
                 id: 'design-strategy',
-                label: 'Design Strategy',
+                label: 'Strategy',
                 pills: ['Creative Strategy', 'UX Research', 'Content Management', 'Competitive Research', 'Content Strategy'],
               },
               {
@@ -697,6 +685,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/case-study/nrts" element={<CaseStudy7 />} />
+        <Route path="/case-study/bc-ai" element={<CaseStudy8 />} />
         <Route path="/case-study/kinvest" element={<CaseStudy />} />
         <Route path="/case-study/pantegral" element={<CaseStudy2 />} />
         <Route path="/case-study/authenticity" element={<CaseStudy4 />} />
