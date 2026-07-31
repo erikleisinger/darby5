@@ -351,7 +351,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 3 — Authenticity by Design */}
+              {/* HIDDEN from grid (route + file intact): Authenticity by Design */}
+              {false && (
               <Link to="/case-study/authenticity" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-3">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgAuthenticity} />
@@ -393,6 +394,7 @@ function LandingPage() {
                   </div>
                 </div>
               </Link>
+              )}
 
               {/* Card 4 — The Cost of Competing With Yourself */}
               <Link to="/case-study/kinvest" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-4">
@@ -428,7 +430,8 @@ function LandingPage() {
                 </div>
               </Link>
 
-              {/* Card 5 — Don't Manage, Do Your Real Work */}
+              {/* HIDDEN from grid (route + file intact): Don't Manage, Do Your Real Work */}
+              {false && (
               <Link to="/case-study/dont-manage" className="flex flex-col items-center px-4 py-8 md:py-[40px] relative rounded-[10px] min-h-[400px] md:min-h-[511px] card-hover" data-animate="stagger-5">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[10px]">
                   <img alt="" className="absolute w-full h-full object-cover rounded-[10px]" src={imgDontManage} />
@@ -461,6 +464,7 @@ function LandingPage() {
                   </div>
                 </div>
               </Link>
+              )}
 
             </div>
           </div>
